@@ -2517,7 +2517,7 @@
         #header > .inner button {
             color: #fff !important;
 			font-weight: 600;
-            width: 100%;
+            width: 50%;
 		}
 
 		#header strong, #header b {
