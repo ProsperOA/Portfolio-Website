@@ -3079,9 +3079,38 @@
 
 	}
 
+    @media screen and (max-width: 650px) {
+
+		/* Poptrox */
+
+            .poptrox-popup {
+                padding-bottom: 5.5em;
+			}
+
+        /* Caption */
+
+            .caption {
+                height: 5.5em !important;
+                padding: 10px !important;
+            }
+
+	}
+
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+
+        /* Poptrox */
+
+            .poptrox-popup {
+                padding-bottom: 8.2em;
+			}
+
+        /* Caption */
+
+            .caption {
+                height: 8.2em !important;
+            }
 
 		/* List */
 
