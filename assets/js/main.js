@@ -132,7 +132,7 @@
 
         // Contact Form
 
-            $('form').submit(function(e) {
+            $('#contact-form').submit(function(e) {
                 e.preventDefault();
 
                 var name = $("input#name").val();
