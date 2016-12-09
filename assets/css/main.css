@@ -1752,6 +1752,29 @@
 		margin: 0 0 2em 0;
 	}
 
+    form #success,
+    form #fail {
+        display: none;
+	}
+
+    form #success input[type="submit"],
+    form #fail input[type="submit"] {
+        color: #fff !important;
+        cursor: default;
+        pointer-events: none;
+        width: 100%;
+	}
+
+    form #success input[type="submit"] {
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+
+    form #fail input[type="submit"] {
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+
 	label {
 		color: #787878;
 		display: block;

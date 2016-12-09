@@ -130,6 +130,42 @@
 
 				});
 
+        // Contact Form
+
+            $('form').submit(function(e) {
+                e.preventDefault();
+
+                var name = $("input#name").val();
+                var email = $("input#email").val();
+                var message = $("textarea#message").val();
+
+                $.ajax({
+                    url: "/assets/php/mail.php",
+                    type: "POST",
+                    data: {
+                        name: name,
+                        email: email,
+                        message: message
+                    },
+                    cache: false,
+                    success: function(msg) {
+                        $('#success').fadeIn(300);
+                        console.log('Message sent: ' + msg);
+
+                        $('form').trigger("reset");
+                    },
+                    error: function(jqXHR, err) {
+                        $('#fail').fadeIn(300);
+                        console.error('Message failed: ' + err);
+
+                        $('form').trigger("reset");
+                    },
+                });
+                setTimeout(function() {
+                   $('#success, #fail').fadeOut(300);
+                }, 2500);
+            });
+
 	});
 
 })(jQuery);
