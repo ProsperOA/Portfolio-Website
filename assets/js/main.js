@@ -132,22 +132,21 @@
 
         // Contact Form
 
-            $('#contact-form').submit(function(e) {
-                e.preventDefault();
+            $('#submit-form').click(function() {
+                console.log('submitting form');
 
                 var name = $("input#name").val();
                 var email = $("input#email").val();
                 var message = $("textarea#message").val();
 
                 $.ajax({
-                    url: "/assets/php/mail.php",
+                    url: "http://cs.csubak.edu/~oosagieamayo/mail/mail.php",
                     type: "POST",
                     data: {
                         name: name,
                         email: email,
                         message: message
                     },
-                    cache: false,
                     success: function(msg) {
                         $('#success').fadeIn(300);
                         console.log('Message sent: ' + msg);
@@ -164,6 +163,8 @@
                 setTimeout(function() {
                    $('#success, #fail').fadeOut(300);
                 }, 2500);
+
+                return false;
             });
 
 	});
