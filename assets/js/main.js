@@ -132,8 +132,8 @@
 
         // Contact Form
 
-            $('#submit-form').click(function() {
-                console.log('submitting form');
+            $('#submit-form').click(function($e) {
+                $e.preventDefault();
 
                 var name = $("input#name").val();
                 var email = $("input#email").val();
@@ -147,9 +147,9 @@
                         email: email,
                         message: message
                     },
-                    success: function(msg) {
+                    success: function() {
                         $('#success').fadeIn(300);
-                        console.log('Message sent: ' + msg);
+                        console.log('Message sent');
 
                         $('form').trigger("reset");
                     },
@@ -158,13 +158,11 @@
                         console.error('Message failed: ' + err);
 
                         $('form').trigger("reset");
-                    },
+                    }
                 });
                 setTimeout(function() {
                    $('#success, #fail').fadeOut(300);
                 }, 2500);
-
-                return false;
             });
 
 	});
