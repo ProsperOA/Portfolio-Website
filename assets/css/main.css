@@ -2090,6 +2090,7 @@
 			}
 
 			.image.avatar img {
+                height: auto !important;
 				width: 100%;
 			}
 
