@@ -130,41 +130,6 @@
 
 				});
 
-        // Contact Form
-
-            $('#submit-form').click(function($e) {
-                $e.preventDefault();
-
-                var name = $("input#name").val();
-                var email = $("input#email").val();
-                var message = $("textarea#message").val();
-
-                $.ajax({
-                    url: "http://cs.csubak.edu/~oosagieamayo/mail/mail.php",
-                    type: "POST",
-                    data: {
-                        name: name,
-                        email: email,
-                        message: message
-                    },
-                    success: function() {
-                        $('#success').fadeIn(300);
-                        console.log('Message sent');
-
-                        $('form').trigger("reset");
-                    },
-                    error: function(jqXHR, err) {
-                        $('#fail').fadeIn(300);
-                        console.error('Message failed: ' + err);
-
-                        $('form').trigger("reset");
-                    }
-                });
-                setTimeout(function() {
-                   $('#success, #fail').fadeOut(300);
-                }, 2500);
-            });
-
 	});
 
 })(jQuery);
