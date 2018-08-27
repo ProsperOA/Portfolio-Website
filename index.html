@@ -1,15 +1,35 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
+
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Prosper Osagie-Amayo" />
     <meta name="description" content="Prosper Osagie-Amayo's Project Porfolio" />
     <meta name="keywords" content="prosper osagie-amayo, portfolio, projects, software developer" />
-    <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="css/main.css" />
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+
+    <title>Prosper's Portfolio</title>
+
+    <!-- Bootstrap Core CSS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300|Roboto:300">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81406821-2"></script>
@@ -20,230 +40,618 @@
       gtag('config', 'UA-81406821-2');
     </script>
 
-    <title>Prosper Osagie-Amayo | Student & Software Developer</title>
+
   </head>
 
-  <body id="top">
+  <body id="page-top" class="index">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top">Prosper's Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <form method="get" action="assets/files/resume-prosper-osagie-amayo.pdf" target="_blank">
+                <button type="submit" class="btn-resume">Resume</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Header -->
-    <header id="header">
-      <div class="inner">
-        <a href="#" class="image avatar">
-          <img src="assets/images/prosper.jpg" alt="Prosper Osagie-Amayo" />
-        </a>
-        <h1>
-          <strong>Prosper Osagie-Amayo</strong>
-        </h1>
-        <p>Student | Freelance Software Developer</p>
-        <form method="get" action="assets/files/resume.pdf" target="_blank">
-          <button type="submit" class="button" id="btn-resume">Resume</button>
-        </form>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <div id="main">
-
-      <!-- One -->
-      <section id="one">
-        <header class="major">
-          <h2>Software Development Portfolio</h2>
-        </header>
-        <div class="row" id="skills">
-          <ul class="4u 12u$(xsmall)">
-            <li class="title">Programming Languages</li>
-            <li>HTML/CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>SQL</li>
-          </ul>
-          <ul class="4u 12u$(xsmall)">
-            <li class="title">Technologies</li>
-            <li>Git, Github</li>
-            <li>PostgreSQL, NoSQL</li>
-            <li>Unix/Linux</li>
-            <li>Heroku</li>
-            <li>AWS</li>
-          </ul>
-          <ul class="4u 12u$(xsmall)">
-            <li class="title">Libraries/Frameworks</li>
-            <li>Bootstrap</li>
-            <li>Angular 4+</li>
-            <li>jQuery</li>
-            <li>Ionic</li>
-            <li>Reative Extensions</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Personal Projects -->
-      <section id="two" class="projects">
-        <h2>Personal Projects</h2>
+    <header>
+      <div class="container">
         <div class="row">
-
-          <!-- Health Calculators -->
-          <article class="6u 12u$(xsmall) work-item">
-            <a href="assets/images/projects/health-calc-02.jpg" class="image fit thumb">
-              <img src="assets/images/projects/health-calc-01.jpg" alt="Health Calculators" />
-            </a>
-            <h3>Health Calculators</h3>
-            <p>
-              Mobile App - HTML/CSS, AngularJS, Ionic, Firebase |
-              <a href="https://github.com/ProsperOA/Health-Calculators" target="blank">
-                Github
-              </a>
-            </p>
-            <span class="desc">
-              An all-in-one suite for health and fitness related calculators. This
-              app utilizes the most reliable formulas in order to accurately track
-              a user's progress.
-            </span>
-          </article>
-
-          <!-- Reader's Block -->
-          <article class="6u$ 12u$(xsmall) work-item">
-            <a href="assets/images/projects/readers-block.PNG" class="image fit thumb">
-              <img src="assets/images/projects/readers-block.PNG" alt="Reader's Block" />
-            </a>
-            <h3>Reader's Block - Electric Bookwork Hackathon</h3>
-            <p>
-              Web App - HTML/CSS, AngularJS, Firebase, APIs: Good Reads, Patchwork |
-              <a href="https://github.com/ProsperOA/readers-block" target="blank">
-                Github
-              </a>
-            </p>
-            <span class="desc">
-              Reader's Block is a list management platform for avid readers.
-              Utilizing the Good Reads API, you are able to search for books that
-              you might want to add to a customizable reading list.
-            </span>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Work Projects -->
-      <section class="projects">
-        <h2>Work Projects</h2>
-        <div class="row">
-
-          <!-- FITCLUB Web App -->
-          <article class="6u 12u$(xsmall) work-item">
-            <a href="assets/images/projects/fitclub-webapp-02.png" class="image fit thumb">
-              <img src="assets/images/projects/fitclub-webapp-01.png" alt="FITCLUB Web App" />
-            </a>
-            <h3>FITCLUB Web App</h3>
-            <p>
-              Web App - Angular4, jQuery, Bootstrap, Firebase |
-              <a href="https://www.fitclubapp.com/business.html" target="blank">
-                Website
-              </a>
-            </p>
-            <span class="desc">
-              An admin console for personal trainers registered with FITCLUB. It
-              simplifies many functions available on the mobile app with a clean
-              UI and intuitive UX.
-            </span>
-          </article>
-
-          <!-- iSafetyPro -->
-          <article class="6u$ 12u$(xsmall) work-item">
-            <a href="assets/images/projects/isafetypro.PNG" class="image fit thumb"><img src="assets/images/projects/isafetypro.PNG" alt="iSafetyPro" /></a>
-            <h3>iSafetyPro - A3 Concepts Inc.</h3>
-            <p>iOS App - Pascal, Fire Monkey |
-              <a href="http://isafetypro.com" target="_blank">iSafetyPro</a>
-            </p>
-            <span class="desc">
-              Provided maintanence and support for the iSafetyPro iOS iPad application.
-              My main project was a user experience overhaul that reduced Job Safety
-              Analysis submission workflow by about 63%.
-            </span>
-          </article>
-
+          <div class="col-lg-12">
+            <img class="img-responsive img-circle" id="img-header" src="./assets/images/prosper.jpg" alt="Prosper Osagie-Amayo" />
+            <div class="intro-text">
+              <span class="name">Prosper Osagie-Amayo</span>
+              <hr class="code-light">
+              <span class="skills">
+                Computer Science Senior &amp; Software Engineer
+              </span>
+            </div>
+          </div>
         </div>
         <div class="row">
-          <!-- KCSHRM Website-->
-          <article class="6u 12u$(xsmall) work-item">
-            <a href="assets/images/projects/kcshrm.PNG" class="image fit thumb"><img src="assets/images/projects/kcshrm.PNG" alt="KCSHRM" /></a>
-            <h3>
-              KCSHRM Website -
-              <a href="https://mershon.enterprises/#/">Mershon Enterprises LLC</a>
-            </h3>
-            <p>Website - HTML/CSS, jQuery, Bootstrap |
-              <a href="https://www.kcshrm.com" target="_blank">KCSHRM</a>
-            </p>
-            <span class="desc">
-              Created a website for the Kern County Society for Human Resource
-              Management from mockups provided by a graphic designer.
-            </span>
-          </article>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="three">
-        <h2>Contact Me</h2>
-        <p>
-          I am interested in employment and internship opportunites relating to
-          software development/engineering.
-        </p>
-        <div class="row">
-          <div class="4u$ 12u$(small)">
-            <ul class="labeled-icons">
+          <div class="col-lg-12">
+            <ul class="list-inline">
               <li>
-                <h3 class="icon fa-home">
-                  <span class="label">Address</span>
-                </h3>
-                Bakersfield, CA
+                <a href="https://www.linkedin.com/in/prosperoa/" class="btn-social btn-outline" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
               </li>
               <li>
-                <h3 class="icon fa-envelope-o">
-                  <span class="label">Email</span>
-                </h3>
-                <a href="mailto:prosperosagieamayo@gmail.com" target="_blank">
-                  prosperosagieamayo@gmail.com
-                </a>
+                <a href="https://github.com/prosperoa" class="btn-social btn-outline" target="_blank" data-toggle="tooltip" title="Github"><i class="fa fa-fw fa-github"></i></a>
               </li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
 
+    <!-- About -->
+    <section id="about" class="bg-laptop">
+      <div class="container bg-banner">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About</h2>
+            <hr class="code-light">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <p style="margin-bottom: 15px">
+              I am a full-stack web and mobile app developer with over two years
+              of professional experience. I have developed multiple projects from
+              ideation to production for small and medium businesses across numerous
+              industries. These industries include, but are not limited to computer
+              software, IT, oil & gas, agriculture, construction, and human resources.
+            </p>
+            <p>
+              I am interested in employment opportunities relating to web or mobile
+              app development, distributed and parallel computing, or infrastructure
+              and systems programming.
+            </p>
+            <div class="row">
+              <div class="col-md-6" style="text-align: left">
+                <h3>Programming Languages</h3>
+                <ul>
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>NodeJS</li>
+                  <li>Go</li>
+                  <li>Python</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+              <div class="col-md-6" style="text-align: right">
+                <h3>Frameworks/Libraries</h3>
+                <ul>
+                  <li>Angular 2+, Ionic</li>
+                  <li>React, React Native</li>
+                  <li>Redux</li>
+                  <li>Flask</li>
+                  <li>Express</li>
+                  <li>Gin</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="success">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+            <hr class="code-light">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/fitclub-webapp.png" class="img-responsive" alt="FITCLUB Web App" />
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/health-calc-01.jpg" class="img-responsive" alt="Health Calculators" />
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/isafetypro.png" class="img-responsive" alt="iSafety Pro">
+            </a>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/kcshrm-01.png" class="img-responsive" alt="KCSHRM">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/boraybyyou-01.png" class="img-responsive" alt="BorayByYou" />
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/projects/readers-block.png" class="img-responsive" alt="Reader's Block" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>FITCLUB Web App</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>Angular 4</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Firebase Database</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <iframe width="680" height="415" src="https://www.youtube.com/embed/20m8ZfIWq70?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 30px"></iframe>
+                <p>
+                  FITCLUB is a platform for people to get personalized fitness
+                  training from their mobile device.
+                </p>
+                <p>
+                  I developed the web app which is a business portal for FITCLUB personal trainers.
+                  It allows trainers to manage their profile, interact with users
+                  on the platform, and create workouts to send to their clients.
+                  I also assisted the founder of the company with UI/UX designs
+                  for the mobile and web app.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>
+                    <strong>
+                      Freelance Software Developer
+                    </strong>
+                  </li>
+                  <li>Client:
+                    <strong>
+                      <a href="https://www.fitclubapp.com" target="_blank">
+                        FITCLUB Global Inc.
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Health Calculators</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>Ionic v1</li>
+                <li>Firebase Database</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/health-calc-01.jpg" class="img-responsive img-centered" alt="Health Calculators" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/health-calc-02.jpg" class="img-responsive img-centered" alt="Health Calculators" />
+                  </div>
+                </div>
+                <p>
+                  An all-in-one suite for health and fitness related calculators.
+                  This app utilizes reliable formulas to accurately calculate
+                  measurements of general health such as lean body mass.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>
+                    <strong>Personal Project</strong>
+                  </li>
+                  <li>Link:
+                    <strong>
+                      <a href="https://github.com/ProsperOA/Health-Calculators" target="_blank">
+                        Github
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>iSafety Pro</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>Object Pascal</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <iframe width="680" height="415" src="https://www.youtube.com/embed/F3YMJ87u9Jc?rel=0&amp;start=94" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 30px"></iframe>
+                  </div>
+                </div>
+                <p>
+                  iSafetyPro is a mobile app for managing SOP (Standard Operating
+                  Procedure) or CSP (Code of Safe Practice) documents and JSA (Job
+                  Safety Analysis) or JHA (Job Hazard Analysis) forms.
+                </p>
+                <p>
+                  I provided maintenance and some development for the iSafetyPro iOS
+                  iPad application. My main accomplishment was a user experience
+                  overhaul that reduced Job Safety Analysis submission workflow
+                  by about 63%.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>Junior Software Developer at
+                    <strong>Mershon Enterprises</strong>
+                  </li>
+                  <li>Client:
+                    <strong>
+                      <a href="http://a3concepts.com" target="_blank">
+                        A3 Concepts Inc.
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Kern County Society of Human Resource Management Website</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/kcshrm-01.png" class="img-responsive img-centered" alt="KCSHRM" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/kcshrm-02.png" class="img-responsive img-centered" alt="KCSHRM" />
+                  </div>
+                </div>
+                <p>
+                  Created a website for the Kern County Society for Human Resource
+                  Management from mockups provided by a graphic designer.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>Junior Software Developer at
+                    <strong>Mershon Enterprises</strong>
+                  </li>
+                  <li>Client:
+                    <strong>
+                      <a href="http://www.kcshrm.com/index.shtml" target="_blank">
+                        KCSHRM
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>BorayByYou Website</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>Wordpress</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/boraybyyou-01.png" class="img-responsive img-centered" alt="BorayByYou" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/images/projects/boraybyyou-02.png" class="img-responsive img-centered" alt="BorayByYou" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="assets/images/projects/boraybyyou-03.png" class="img-responsive img-centered" alt="BorayByYou" />
+                  </div>
+                  <div class="col-md-4">
+                    <img src="assets/images/projects/boraybyyou-04.png" class="img-responsive img-centered" alt="BorayByYou" />
+                  </div>
+                  <div class="col-md-4">
+                    <img src="assets/images/projects/boraybyyou-05.png" class="img-responsive img-centered" alt="BorayByYou" />
+                  </div>
+                </div>
+                <p>
+                  Developed a multi-vendor e-commerce website with Wordpress.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>
+                    <strong>Freelance Software Developer</strong>
+                  </li>
+                  <li>Client:
+                    <strong>
+                      <a href="https://boraybyyou.com/" target="_blank">
+                        BorayByYou
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Reader's Block</h2>
+              <hr class="star-primary">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <h3 style="text-decoration: underline">Tech Stack</h3>
+              <ul>
+                <li>AngularJS</li>
+                <li>Firebase</li>
+                <li>Good Reads API</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="assets/images/projects/readers-block.png" class="img-responsive img-centered" alt="Reader's Block" />
+                  </div>
+                </div>
+                <p>
+                  Worked on a team of 3 to create a platform for creating a playlist
+                  and reviewing books. Managed to deploy a prototype during the
+                  weekend of the hackathon.
+                </p>
+                <ul class="list-inline item-details">
+                  <li>
+                    <strong>Electric Bookworm Hackathon</strong>
+                  </li>
+                  <li>Link:
+                    <strong>
+                      <a href="https://github.com/ProsperOA/readers-block" target="_blank">
+                        Github
+                      </a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
-    <footer id="footer">
-      <div class="inner">
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/prosperoa" class="icon fa-linkedin" target="_blank">
-              <span class="label">Linkedin</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/ProsperOA" class="icon fa-github" target="_blank">
-              <span class="label">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:prosperosagieamayo@gmail.com" class="icon fa-envelope-o" target="_blank">
-              <span class="label">Email</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Prosper Osagie-Amayo</li>
-        </ul>
+    <footer class="text-center">
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="list-inline">
+                <li>
+                  <a href="https://www.linkedin.com/in/prosperoa/" class="btn-social btn-outline" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/prosperoa" class="btn-social btn-outline" target="_blank" data-toggle="tooltip" title="Github"><i class="fa fa-fw fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              &copy; Prosper Osagie-Amayo |
+              <a href="mailto:prosperosagieamayo@gmail.com">prosperosagieamayo@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.poptrox.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/util.js"></script>
-    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-    <script src="js/main.js"></script>
+    <!-- scroll to top button -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+      <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!-- bootstrap core javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- plugin javascript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- contact form javascript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact.js"></script>
+
+    <!-- custom theme javascript -->
+    <script src="js/script.js"></script>
 
   </body>
 

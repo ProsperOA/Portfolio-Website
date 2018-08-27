@@ -1,5 +1,5 @@
-# Portfolio Website #
-Portfolio website for displaying information of my projects.
+# Portfolio Website
+My software development project portfolio website
 
 ## Template ##
-[Strata](https://html5up.net/strata) by HTML5 UP
+[Freelancer](https://startbootstrap.com/template-overviews/freelancer/) by Start Bootstrap
